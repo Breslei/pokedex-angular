@@ -1,0 +1,108 @@
+@media (min-width:400px){
+    #header{
+        display: relative;
+        background-color: rgb(102 45 145);
+        text-align: center;
+        color: white;
+        font-size: 32pt;
+        height: 10%;
+        padding-top: 1.7%;
+    
+    }
+    
+    #txtHeader{
+        padding-top: 1.5%;
+    }
+  
+     
+            body {
+ overflow-y: hidden !important;
+  } 
+  
+    .sidenav {
+      height: 100%;
+      border: 3px solid #000; 
+      width: 100%;
+      margin: 0;
+      overflow: hidden
+    }
+
+
+    .searchForm{
+      margin-top: 7%;
+      border-bottom: 3px solid #000;
+    } 
+
+    #inputSearch{ 
+       margin-top: 4%; 
+       margin-left: 3%;
+       margin-bottom: 10%;
+       height: 10%;
+       width: 80%;
+       font-size: 16pt;
+       border-radius: 1em;
+       padding: 2%;
+      outline: none;
+}
+
+#btnSearch{
+    width: 45px;
+    height: 45px;
+    align-content: center;
+    margin-left: 1.5%;
+    font-size: 12pt;
+ 
+}
+
+#imgLupa{
+    height: 30px;
+    width: 30px;
+}
+
+
+.mainContent {
+    height: 100%;
+    border-top: none !important;
+    border: 3px solid #000;
+    width: 100%;
+    margin: 0;
+  }
+
+  #sectionNames{
+    margin: 7%;
+  }
+
+  #pokemonList{
+    height: 100%;
+    width: 100%;
+    font-size: 20pt;
+    align-content: initial;
+  }
+
+  #pokemonDetailsList{
+    height: 100%;
+    width: 100%;
+    font-size: 20pt;
+    align-content: initial;
+  }
+#namPokemon{
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.alignItemsList{
+    margin-bottom: 1%;
+}
+
+.imgPokemon{
+    width: 240px;
+    height: 240px;
+    margin-left: 5%;
+}           
+           
+.alignItems{
+    margin-left: 5%;
+}
+
+
+}

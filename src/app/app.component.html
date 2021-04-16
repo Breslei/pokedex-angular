@@ -1,0 +1,57 @@
+<div id="header">
+    <p id="txtHeader">Pokémon Showroom</p>
+</div>
+
+
+<mat-drawer-container class="sidenav">
+    <mat-drawer mode="side" opened>
+        <form method="get" class="searchForm">
+            <input id="inputSearch" type="search" placeholder="Pesquisar..."  name="nameForSearch" value=""/>
+            <button id="btnSearch" type="submit" form="searchForm">
+                <img id='imgLupa' src="../../../../assets/img/lupa.png">   
+            </button>
+        </form> 
+        <div id="sectionNames">
+            <div id="pokemonList">
+                <div *ngIf="pokemons$ as pokemon "> 
+                    <div *ngFor="let item of pokemon">
+                      <a  (click)="getData(item.name)" ngModel><p>{{item.name}}</p></a> 
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content class="mainContent"> 
+        <div>
+            <div id="pokemonDetailsList">
+
+                <div *ngIf="detail$ as detail"> 
+                   <div *ngFor="let item of detail">
+                     <img [src]="item.sprites.front_default" class="imgPokemon"/> 
+                     <p class="alignItems" id="namPokemon">{{item.name}}</p>
+
+                     <div class="alignItems">
+                         <h1 >Habilidades:</h1>
+                         <ul>
+                            <li class="alignItemsList">{{item.abilities[0].ability.name}}</li>
+                            <li class="alignItemsList">{{item.abilities[1].ability.name}}</li>
+                         </ul>
+
+                     </div>
+                     <div class="alignItems">
+                         <h1>Tipo:</h1>
+                         <ul>
+                            <li>{{item.types[0].type.name}}</li>
+                         </ul>
+                     </div>
+
+                   </div>
+                </div>
+            </div>
+        </div> 
+        
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+
+
